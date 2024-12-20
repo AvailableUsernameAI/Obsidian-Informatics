@@ -3,7 +3,7 @@
 
 ## Различные функции
 #### Работа с числами
-`std::llround ` ---
+`std::llround ` 
 #### Работа с массивом
 `std::sort`
 `std::count`
@@ -21,6 +21,6 @@
 `std::__builtin_popcount` 
 #### Itertools C++
 `std::nex(t)_permutatuion`
-...
+
 #### Приведение типов
 `std::to_string` ?
