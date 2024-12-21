@@ -51,12 +51,15 @@ int main() {
     auto first = vec.begin();
     auto last = vec.end();
   
-    // Using partial_sum with user-defined function (myfun)
+    // Использование partial_sum с пользовательской функцией
     partial_sum(first, last, result.begin(), op);
 
     for (int val : result)
         cout << val << " ";
     return 0;
-}
-```
+}```
+**Вывод:**
+`5 50 750`
 
+## Асимптотика
+O(n)
