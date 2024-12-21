@@ -3,7 +3,7 @@
 
 ## Различные функции
 #### Работа с числами
-[[llround|std::llround]]
+`std::llround ` 
 #### Работа с массивом
 `std::sort`
 `std::count`
