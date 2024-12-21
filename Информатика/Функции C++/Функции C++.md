@@ -1,13 +1,9 @@
----
-node_size: 30
----
-
 ## Naming
 `l`, `ll` в начале или конце &int; перевод из/в long int / double
 
 ## Различные функции
 #### Работа с числами
-[[llround|std::llround]]
+`std::llround ` 
 #### Работа с массивом
 `std::sort`
 `std::count`
