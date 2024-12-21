@@ -1,3 +1,7 @@
+---
+node_size: 30
+---
+
 ## Naming
 `l`, `ll` в начале или конце &int; перевод из/в long int / double
 
