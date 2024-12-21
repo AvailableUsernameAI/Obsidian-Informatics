@@ -3,27 +3,24 @@
 
 ## Различные функции
 #### Работа с числами
-`std::llround ` 
+[[llround|std::llround]]
 #### Работа с массивом
-`std::sort`
-
-
-`std::count`
+std::sort
+std::count
 [[partial_sum|std::partial_sum]]
-
-`std::accumulate`
-`std::min`
-`std::max`
+std::accumulate
+std::min
+std::max
 #### Бинарный поиск в массиве
-`std::upper_bound`
-`std::lower_bound`
-`std::binary_search`
+std::upper_bound
+std::lower_bound
+std::binary_search
 #### Функции builtin
-`std::__builtin_clz`
-`std::__builtin_ctz`
-`std::__builtin_popcount` 
+std::\_\_builtin_clz
+std::\_\_builtin_ctz
+std::\_\_builtin_popcount
 #### Itertools C++
-`std::nex(t)_permutatuion`
+std::nex(t)_permutatuion
 
 #### Приведение типов
 `std::to_string` ?
