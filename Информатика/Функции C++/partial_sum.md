@@ -1,12 +1,41 @@
 ## Описание
 *partial_sum* делает префиксную сумму по массиву и записывает её в другой. Для записи необходимо указать итератор на начало второго массива (вектора), куда запишется сумма.
+
+Находится в файле numeric.
 ## Синтаксис
-`std::partial_sum(__first, last, res[, op__]);`
-`std::vector<int> std::partial_sum<std::vector<int>::iterator, std::vector<int>>(std::vector<int>::iterator __first, std::vector<int>::iterator __last, std::vector<int> __result)`
-first, last - *см. [как задавать функции]*
-res - итератор на начало второго массива.
-op - функция для операции над числами. (*подробнее в примерах*).
-partial_sum возвращает итератор на конец массива для записи.
+`std::partial_sum(__first, __last, __result[, __op])`
+
+* _result_ - итератор на начало второго массива.
+* _op_ - функция для операции над числами.
+* Функция возвращает итератор на конец массива для записи.
+
+Для работы должен быть создан массив \_\_result ненулевой длины.
+
+`Функция std::partial_sum для массивов`
+```cpp
+template<typename T> // Любой тип
+T * // Возвращает указатель на массив
+std::partial_sum<T *, T *>
+(
+	T *__first, // Указатель на начало массива
+	T *__last, // Указатель на конец массива
+	T *__result // Заполняемый массив
+	[, function<T(T, T)> __binary_op ] // Функция (опционально)
+)
+```
+
+`Функция std::partial_sum для векторов`
+```cpp
+template<typename T> // Любой тип вектора
+std::vector<T> // Возвращает вектор
+std::partial_sum<std::vector<T>::iterator, std::vector<T>>  (что это)
+(
+	std::vector<T>::iterator __first, // Итератор,указывающий на начало массива
+	std::vector<T>::iterator __last, // Итератор, указывающий на конец
+	std::vector<T>::iterator __result // Массив с результатом
+	[, function<T(T, T)> __binary_op ] // Функция (опционально)
+)
+```
 ## Примеры
 #### Пример 1
 `сумма элементов из vec передаётся в res`
@@ -19,8 +48,8 @@ int main() {
     vector<int> res(vec.size());
   
     // Определение границ массива
-    auto first = vec.begin();
-    auto last = vec.end();
+    vector<int>::iterator first = vec.begin();
+    vector<int>::iterator last = vec.end();
   
     // Использование partial_sum для префиксной суммы элементов
     partial_sum(first, last, res.begin());
