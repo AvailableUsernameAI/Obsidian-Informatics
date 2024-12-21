@@ -5,12 +5,11 @@
 #### Работа с числами
 `std::llround ` 
 #### Работа с массивом
-*все эти функции одинаково принимают массив на вход. Это рассказано*
 `std::sort`
 
 
 `std::count`
-[[[partial_sum|std::partial_sum]]
+[[partial_sum|std::partial_sum]]
 `std::accumulate`
 `std::min`
 `std::max`
