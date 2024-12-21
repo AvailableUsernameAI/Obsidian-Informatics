@@ -5,12 +5,12 @@
 #### Работа с числами
 `std::llround ` 
 #### Работа с массивом
-`std::sort`
-`std::count`
+std::sort
+std::count
 [[partial_sum|std::partial_sum]]
-`std::accumulate`
-`std::min`
-`std::max`
+std::accumulate
+std::min
+std::max
 #### Бинарный поиск в массиве
 `std::upper_bound`
 `std::lower_bound`

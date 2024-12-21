@@ -4,7 +4,7 @@
 `std::partial_sum(__first, last, res[, op__])`
 
 ```cpp
-template<typename T> // Любой тип
+template<typename T> // Любой тип вектора
 std::vector<T> // Возвращает вектор
 std::partial_sum<std::vector<T>::iterator, std::vector<T>> (что это)
 (
