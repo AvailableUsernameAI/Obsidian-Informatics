@@ -1,7 +1,8 @@
 ## Описание
 *partial_sum* делает префиксную сумму по массиву и записывает её в другой. Для записи необходимо указать итератор на начало второго массива (вектора), куда запишется сумма.
 ## Синтаксис
-`std::partial_sum (__first, last, res, op__);`
+`std::partial_sum(__first, last, res[, op__]);`
+`std::vector<int> std::partial_sum<std::vector<int>::iterator, std::vector<int>>(std::vector<int>::iterator __first, std::vector<int>::iterator __last, std::vector<int> __result)`
 first, last - *см. [как задавать функции]*
 res - итератор на начало второго массива.
 op - функция для операции над числами. (*подробнее в примерах*).
