@@ -9,7 +9,7 @@
 
 
 `std::count`
-[[partial_sum|`std::partial_sum`]]
+[[partial_sum|std::partial_sum]]
 
 `std::accumulate`
 `std::min`
