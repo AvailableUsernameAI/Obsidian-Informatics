@@ -1,19 +1,16 @@
----
-node_size: 30
----
 ## Naming
 `l`, `ll` в начале или конце &int; перевод из/в long int / double
 
 ## Различные функции
 #### Работа с числами
-[[llround|std::llround]]
+`std::llround ` 
 #### Работа с массивом
-std::sort
-std::count
+`std::sort`
+`std::count`
 [[partial_sum|std::partial_sum]]
-std::accumulate
-std::min
-std::max
+`std::accumulate`
+`std::min`
+`std::max`
 #### Бинарный поиск в массиве
 `std::upper_bound`
 `std::lower_bound`
